@@ -44,11 +44,11 @@ public class MenuNinios extends Menu{
     @Override
     public String toString(){
         String cadena = String.format("Menu niños: \n"
-                + "Plato: %s\n"
-                + "Valor inicial: %.2f\n"
-                + "Valor helado: %.2f\n"
-                + "Valor pastel: %.2f\n"
-                + "Valor menu: %.2f\n",
+                + "     Plato: %s\n"
+                + "     Valor inicial: %.2f\n"
+                + "     Valor helado: %.2f\n"
+                + "     Valor pastel: %.2f\n"
+                + "     Valor menu: %.2f",
                 nombrePlato, valorInicial,
                 valorHelado, valorPastel,
                 valorMenu);

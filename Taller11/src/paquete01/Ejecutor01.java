@@ -5,6 +5,14 @@
  */
 package paquete01;
 
+import java.util.ArrayList;
+import paquete02.Cuenta;
+import paquete02.Menu;
+import paquete03.MenuCarta;
+import paquete03.MenuDia;
+import paquete03.MenuEcono;
+import paquete03.MenuNinios;
+
 /**
  *
  * @author reroes
@@ -16,10 +24,39 @@ public class Ejecutor01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ArrayList<Menu> lista = new ArrayList<>();
+        double men = 0.4;
+        
+        MenuNinios mn = new MenuNinios(men);
+        MenuNinios mn2 = new MenuNinios("Niños 01", 2, 1, 1.5);
+        lista.add(mn2);
+        MenuNinios mn3 = new MenuNinios("Niños 02", 3, 1, 1.5);
+        lista.add(mn3);
+        
+        MenuEcono me = new MenuEcono(men);
+        MenuEcono me2 = new MenuEcono("Econo 001", 4, 0.25);
+        lista.add(me2);
+        
+        MenuDia md = new MenuDia(men);
+        MenuDia md2 = new MenuDia("Dia 001", 5, 1, 1);
+        lista.add(md2);
+        
+        MenuCarta mc = new MenuCarta(men);
+        MenuCarta mc2 = new MenuCarta("Carta 001", 6, 1.5, 2, 0.10);
+        lista.add(mc2);
+        
+        for (int i = 0; i < lista.size(); i++) {
+            lista.get(i).establecerValorMenu();
+        }
+
+        Cuenta miCuenta = new Cuenta("René Elizalde", lista, 0.10);
+        miCuenta.establecerSubtotal();
+        miCuenta.establecerValorTotal();
+        System.out.printf("%s\n", miCuenta);
+
     }
-    
-    
 }
+
 // lo que debe presentar
 /*
 Factura

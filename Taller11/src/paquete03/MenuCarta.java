@@ -50,13 +50,13 @@ public class MenuCarta extends Menu{
     @Override
     public String toString(){
         String cadena = String.format("Menú a la carta:\n"
-                + "Nombre del plato: %s\n"
-                + "Valor inicial: %.2f\n"
-                + "Valor guarnición: %.2f\n"
-                + "Valor bebida: %.2f\n"
-                + "Porcentaje adicional por "
-                + "servicio: %.2f\n "
-                + "Valor menú: %.2f\n", 
+                + "     Nombre del plato: %s\n"
+                + "     Valor inicial: %.2f\n"
+                + "     Valor guarnición: %.2f\n"
+                + "     Valor bebida: %.2f\n"
+                + "     Porcentaje adicional por "
+                + "servicio: %.2f\n"
+                + "     Valor menú: %.2f", 
                 nombrePlato, valorInicial,
                 valorGuarnicion, valorBebida,
                 porcentaje, valorMenu);

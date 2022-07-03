@@ -36,7 +36,6 @@ public class Cuenta {
     
     public void establecerSubtotal(){
         for(int i = 0; i < listaMenu.size(); i++){
-            
             subtotal = subtotal + listaMenu.get(i).obtenerValorMenu();
         }
     }
@@ -73,17 +72,17 @@ public class Cuenta {
     public String toString(){
         String cadena2 = "";
         for (int i = 0; i < listaMenu.size(); i++){
-             cadena2 = String.format("Menú del día\n"
-                     + "%s\n%s\n",cadena2 ,listaMenu);
+             cadena2 = String.format("%s\n"
+                     + "%s\n",cadena2 , listaMenu.get(i));
         }
         
         String cadena = String.format("Factura\n"
-                + "Cliente: %s\n"
+                + "Cliente: %s"
                 + "%s\n"
                 + "Subtotal: %.2f\n"
                 + "IVA: %.2f\n"
                 + "Total a pagar: %.2f\n", nombreCliente, cadena2,
-                subtotal, iva, valorTotal);
+                obtenerSubtotal(), obtenerIva(), obtenerValorTotal());
         return cadena;
     }
     

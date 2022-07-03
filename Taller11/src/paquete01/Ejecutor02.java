@@ -49,53 +49,40 @@ public class Ejecutor02 {
         // Inicio de solución
         double men = 0.4;
         MenuCarta mc = new MenuCarta(men);
-        MenuCarta mc2 = new MenuCarta("Carta 001", 6, 1.5, 2, 10);
-        mc2.establecerValorMenu();
+        MenuCarta mc2 = new MenuCarta("Carta 001", 6, 1.5, 2, 0.10);
         lista.add(mc2);
-        MenuCarta mc3 = new MenuCarta("Carta 002", 7, 1.7, 2.1, 5);
-        mc3.establecerValorMenu();
+        MenuCarta mc3 = new MenuCarta("Carta 002", 7, 1.7, 2.1, 0.5);
         lista.add(mc3);
-        MenuCarta mc4 = new MenuCarta("Carta 003", 8, 1.9, 2.2, 5);
-        mc4.establecerValorMenu();
+        MenuCarta mc4 = new MenuCarta("Carta 003", 8, 1.9, 2.2, 0.5);
         lista.add(mc4);
-        MenuCarta mc5 = new MenuCarta("Carta 004", 9, 2.5, 2.9, 5);
-        mc5.establecerValorMenu();
+        MenuCarta mc5 = new MenuCarta("Carta 004", 9, 2.5, 2.9, 0.5);
         lista.add(mc5);
         
         
         MenuDia md = new MenuDia(men);
         MenuDia md2 = new MenuDia("Dia 001", 5, 1, 1);
-        md2.establecerValorMenu();
         lista.add(md2);
         MenuDia md3 = new MenuDia("Dia 002", 6, 2, 2);
-        md3.establecerValorMenu();
         lista.add(md3);
         MenuDia md4 = new MenuDia("Dia 003", 5.5, 3, 1);
-        md4.establecerValorMenu();
         lista.add(md4);
        
         
         MenuEcono me = new MenuEcono(men);
-        MenuEcono me2 = new MenuEcono("Econo 001", 4, 25);
-        me2.establecerValorMenu();
+        MenuEcono me2 = new MenuEcono("Econo 001", 4, 0.25);
         lista.add(me2);
-        MenuEcono me3 = new MenuEcono("Econo 002", 4, 15);
-        me3.establecerValorMenu();
+        MenuEcono me3 = new MenuEcono("Econo 002", 4, 0.15);
         lista.add(me3);
-        MenuEcono me4 = new MenuEcono("Econo 003", 4, 35);
-        me4.establecerValorMenu();
+        MenuEcono me4 = new MenuEcono("Econo 003", 4, 0.35);
         lista.add(me4);
         
         
         MenuNinios mn = new MenuNinios(men);
         MenuNinios mn2 = new MenuNinios("Niños 01", 2, 1, 1.5);
-        mn2.establecerValorMenu();
         lista.add(mn2);
         MenuNinios mn3 = new MenuNinios("Niños 02", 3, 1, 1.5);
-        mn3.establecerValorMenu();
         lista.add(mn3);
         MenuNinios mn4 = new MenuNinios("Niños 03", 2, 2, 0.5);
-        mn4.establecerValorMenu();
         lista.add(mn4);
         
 
@@ -105,7 +92,7 @@ public class Ejecutor02 {
         }
 
         // Un objeto de tipo Cuenta
-        Cuenta miCuenta = new Cuenta("Luis Andrade", lista, 10);
+        Cuenta miCuenta = new Cuenta("Luis Andrade", lista, 0.10);
         miCuenta.establecerSubtotal();
         miCuenta.establecerValorTotal();
         System.out.printf("%s\n", miCuenta);
